@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Elsa Ayache - Admin Sys & Réseaux</title>
+    <title>Portfolio | Elsa Ayache - SISR</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&subset=latin,latin-ext&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <div class="container nav-content">
-            <div class="logo">
-                <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.75M5.25 9h3.75m-3.75 3h3.75m-3.75 3h3.75m3-6h3.75m-3.75 3h3.75m-3.75 3h3.75" /></svg>
-                Elsa<span>.SISR</span>
-            </div>
+            <div class="logo">Elsa<span>.SISR</span></div>
             <ul>
                 <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#ecole">École</a></li>
-                <li><a href="#competences">Stack Tech</a></li>
                 <li><a href="#experience">Stages</a></li>
-                <li><a href="#veille">Veille Tech</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects-sisr">Infrastructure</a></li>
+                <li><a href="#projects-dev">Projets &amp; Dev</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#about-section">À propos</a></li>
             </ul>
             <button class="menu-btn" id="menuBtn" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -29,63 +26,64 @@
         </div>
         <div class="mobile-menu" id="mobileMenu">
             <ul>
-                <li><a href="#parcours" onclick="closeMobileMenu()">Parcours</a></li>
-                <li><a href="#ecole" onclick="closeMobileMenu()">École</a></li>
-                <li><a href="#competences" onclick="closeMobileMenu()">Stack Tech</a></li>
-                <li><a href="#experience" onclick="closeMobileMenu()">Stages</a></li>
-                <li><a href="#veille" onclick="closeMobileMenu()">Veille Tech</a></li>
-                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li><a href="#parcours"       onclick="closeMobileMenu()">Parcours</a></li>
+                <li><a href="#experience"     onclick="closeMobileMenu()">Stages</a></li>
+                <li><a href="#projects-sisr"  onclick="closeMobileMenu()">Infrastructure</a></li>
+                <li><a href="#projects-dev"   onclick="closeMobileMenu()">Projets &amp; Dev</a></li>
+                <li><a href="#veille"         onclick="closeMobileMenu()">Veille</a></li>
+                <li><a href="#about-section"  onclick="closeMobileMenu()">À propos</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- ========== HERO ========== -->
     <header id="about" class="container hero-container">
         <div class="hero">
-            <div class="hero-badge">Systèmes · Réseaux · Cybersécurité</div>
-            <h1>Compétences <span class="accent">Infrastructure<br>& Sécurité</span></h1>
+            <div class="hero-badge">BTS SIO · SISR · Toulouse</div>
+            <h1>Compétences <span class="accent">Systèmes<br>&amp; Réseaux</span></h1>
             <p>
-                Issue d'un parcours en Licence Informatique, je finalise mon <strong>BTS SIO SISR</strong> à l'école <strong>IRIS Toulouse</strong>. Je rejoindrai l'<strong>EPSI Balma</strong> en Bachelor Administrateur Systèmes, Réseaux et Base de Données.
+                Issue d'un parcours en Licence Informatique, je finalise mon <strong>BTS SIO SISR</strong> à l'école <strong>IRIS Toulouse</strong>.
+                Je rejoindrai l'<strong>EPSI Balma</strong> en Bachelor Admin Sys &amp; BDD.
             </p>
             <div class="actions">
-                <a href="documents\00_Documents_Administratifs\TableauSyntheseE5_AyacheElsa.pdf" class="btn-primary" target="_blank" rel="noopener">
-                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
-                    Synthèse E5
-                </a>
-                <a href="documents/AYACHE_Elsa_CV_IT.pdf" class="btn-secondary" target="_blank" rel="noopener">
-                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
-                    Télécharger mon CV
-                </a>
+                <a href="documents\00_Documents_Administratifs\Tableau_de_synthèse_AYACHE_Elsa.pdf" class="btn-primary" target="_blank" rel="noopener">📄 Tableau de Synthèse E5</a>
+                <a href="mailto:elsa.ayache@outlook.com" class="btn-secondary">Me contacter</a>
             </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
-            <div class="tech-grid"></div>
+            <div class="hv-ring hv-ring-1"></div>
+            <div class="hv-ring hv-ring-2"></div>
+            <div class="hv-ring hv-ring-3"></div>
+            <div class="hv-dot hv-dot-1"></div>
+            <div class="hv-dot hv-dot-2"></div>
+            <div class="hv-dot hv-dot-3"></div>
         </div>
     </header>
 
     <main class="container">
 
+        <!-- ========== PARCOURS ========== -->
         <section id="parcours">
             <h2 class="section-title">Mon Parcours</h2>
             <div class="parcours-grid">
 
                 <div class="parcours-card">
                     <div class="parcours-card-header">
-                        <div class="parcours-icon-wrap">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg>
-                        </div>
+                        <div class="parcours-icon-wrap">👩‍💻</div>
                         <div>
-                            <span class="tag-tech">Profil Technique</span>
+                            <span class="tag-tech">À propos</span>
                             <h3>Elsa Ayache</h3>
                         </div>
                     </div>
 
                     <div class="parcours-timeline">
+
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <span class="timeline-date">2024 – 2026</span>
                                 <strong>BTS SIO option SISR</strong> — IRIS Toulouse
-                                <p>Administration systèmes & réseaux, sécurité des SI, services réseau. Deux stages techniques réalisés chez Collins Aerospace.</p>
+                                <p>Formation en administration systèmes &amp; réseaux, sécurité des SI, services réseau. Deux stages chez Collins Aerospace.</p>
                             </div>
                         </div>
 
@@ -94,62 +92,78 @@
                             <div class="timeline-content">
                                 <span class="timeline-date">Avant 2024</span>
                                 <strong>Licence Informatique</strong>
-                                <p>Fondamentaux en algorithmique, base de données (SQL) et systèmes d'information.</p>
+                                <p>Fondamentaux en algorithmique, développement et systèmes d'information.</p>
                             </div>
                         </div>
 
                         <div class="timeline-item timeline-item--next">
                             <div class="timeline-dot timeline-dot--accent"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">Rentrée 2026 · Alternance recherchée</span>
-                                <strong>Bachelor Admin. Systèmes, Réseaux & BDD</strong> — EPSI Balma
-                                <p>Poursuite en administration avancée et sécurisation des infrastructures.</p>
+                                <span class="timeline-date">Rentrée 2026 · En recherche d'alternance</span>
+                                <strong>Bachelor Admin. Systèmes, Réseaux &amp; BDD</strong> — EPSI Balma
+                                <p>Poursuite en administration avancée des systèmes, réseaux et bases de données SQL.</p>
                             </div>
                         </div>
+
+                    </div>
+
+                    <div class="parcours-tags">
+                        <span class="skill-pill">Proxmox / VMware</span>
+                        <span class="skill-pill">Cisco / pfSense</span>
+                        <span class="skill-pill">Linux / Windows Server</span>
+                        <span class="skill-pill">Cybersécurité</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">GLPI</span>
                     </div>
                 </div>
 
                 <div class="parcours-card parcours-card--project">
                     <div class="parcours-card-header">
-                        <div class="parcours-icon-wrap">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>
-                        </div>
+                        <div class="parcours-icon-wrap">🎓</div>
                         <div>
-                            <span class="tag-tech">Alternance ciblée</span>
-                            <h3>Bachelor Admin. Sys & Réseaux</h3>
+                            <span class="tag-tech">Prochain objectif · EPSI Balma</span>
+                            <h3>Bachelor Admin. Systèmes, Réseaux &amp; BDD</h3>
                         </div>
                     </div>
 
                     <div class="parcours-meta-row">
-                        <span class="parcours-meta-pill">EPSI Balma</span>
-                        <span class="parcours-meta-pill">Rentrée 2026</span>
-                        <span class="parcours-meta-pill parcours-meta-pill--accent">Alternance recherchée</span>
+                        <span class="parcours-meta-pill">📍 Balma, Toulouse</span>
+                        <span class="parcours-meta-pill">📅 Rentrée 2026</span>
+                        <span class="parcours-meta-pill parcours-meta-pill--accent">🔍 Alternance recherchée</span>
                     </div>
 
                     <p>
-                        À la rentrée 2026, je rejoindrai l'<strong>EPSI Balma</strong>. Cette formation en alternance me permettra de consolider mon expertise dans des environnements de production.
+                        À la rentrée 2026, je rejoindrai l'<strong>EPSI Balma</strong> pour préparer un <strong>Bachelor Administrateur Systèmes, Réseaux et Bases de Données</strong>.
+                        Cette formation en alternance me permettra d'approfondir mes compétences techniques dans un contexte professionnel concret.
                     </p>
 
                     <div class="epsi-modules">
                         <div class="epsi-module">
-                            <svg class="epsi-module-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" /></svg>
+                            <span class="epsi-module-icon">🖥️</span>
                             <div>
-                                <strong>Systèmes & Virtualisation</strong>
-                                <p>Gestion d'environnements Windows Server/Linux, clusters HA.</p>
+                                <strong>Administration Systèmes</strong>
+                                <p>Gestion avancée d'environnements Windows Server et Linux, virtualisation, haute disponibilité.</p>
                             </div>
                         </div>
                         <div class="epsi-module">
-                            <svg class="epsi-module-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+                            <span class="epsi-module-icon">🌐</span>
                             <div>
-                                <strong>Réseaux & Sécurité</strong>
-                                <p>Routage, VPN, sécurité périmétrique et supervision.</p>
+                                <strong>Administration Réseaux</strong>
+                                <p>Routage, switching, VPN, sécurité périmétrique et supervision d'infrastructure.</p>
+                            </div>
+                        </div>
+                        <div class="epsi-module">
+                            <span class="epsi-module-icon">🗄️</span>
+                            <div>
+                                <strong>Bases de Données (SQL)</strong>
+                                <p>Conception, administration et optimisation de bases de données relationnelles.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="alternance-banner">
-                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.119-1.243l1.263-12c.078-.738.706-1.307 1.45-1.307h11.454c.744 0 1.372.569 1.45 1.307z" /></svg>
-                        Je recherche une <strong>alternance</strong> pour accompagner cette formation.
+                        🔍 Je suis actuellement à la recherche d'une <strong>alternance</strong> pour accompagner cette formation — n'hésitez pas à me contacter !
                         <a href="mailto:elsa.ayache@outlook.com" class="btn-primary alternance-btn">Me contacter</a>
                     </div>
                 </div>
@@ -157,154 +171,56 @@
             </div>
         </section>
 
-        <section id="ecole">
-            <h2 class="section-title">Mon École</h2>
-            <div class="parcours-card" style="max-width: 850px; margin: 0 auto;">
-                <div class="parcours-card-header">
-                    <div class="parcours-icon-wrap">
-                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" /></svg>
-                    </div>
-                    <div>
-                        <span class="tag-tech">Formation Actuelle</span>
-                        <h3>IRIS — Campus de Toulouse</h3>
-                    </div>
-                </div>
-
-                <div class="parcours-meta-row">
-                    <span class="parcours-meta-pill">Toulouse, Occitanie</span>
-                    <span class="parcours-meta-pill">Membre MediaSchool</span>
-                    <span class="parcours-meta-pill parcours-meta-pill--accent">BTS SIO SISR</span>
-                </div>
-
-                <p>
-                    L'école <strong>IRIS</strong> propose une pédagogie axée sur la pratique, me permettant de développer des compétences concrètes.
-                </p>
-                <p class="parcours-p2">
-                    J'y consolide mon expertise en administration système (serveurs locaux/Cloud), sécurisation des flux et gestion d'incidents, essentielle pour mon parcours SISR.
-                </p>
-
-                <div class="actions" style="margin-top: 24px;">
-                    <a href="https://ecoleiris.fr/campus/toulouse/" target="_blank" rel="noopener" class="btn-secondary">
-                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
-                        Site officiel de l'école
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="competences">
-            <h2 class="section-title">Ma Stack Technique</h2>
-            <div class="parcours-grid competences-wrapper">
-                
-                <div class="parcours-card competences-card">
-                    <div class="parcours-card-header">
-                        <div class="parcours-icon-wrap">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" /></svg>
-                        </div>
-                        <h3>Systèmes & Virtualisation</h3>
-                    </div>
-                    <p>Déploiement et administration d'infrastructures serveurs.</p>
-                    <div class="parcours-tags">
-                        <span class="skill-pill">Windows Server 2019/2022</span>
-                        <span class="skill-pill">Linux (Debian, Ubuntu)</span>
-                        <span class="skill-pill">AD, GPO, DNS, DHCP</span>
-                        <span class="skill-pill">Proxmox VE (clusters HA)</span>
-                        <span class="skill-pill">VMware Workstation</span>
-                    </div>
-                </div>
-
-                <div class="parcours-card competences-card">
-                    <div class="parcours-card-header">
-                        <div class="parcours-icon-wrap">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>
-                        </div>
-                        <h3>Réseaux & Sécurité</h3>
-                    </div>
-                    <p>Conception, sécurisation et supervision d'architectures réseaux.</p>
-                    <div class="parcours-tags">
-                        <span class="skill-pill">Cisco IOS (VLAN, Routage, ACL)</span>
-                        <span class="skill-pill">Outils de Supervision (Nagios)</span>
-                        <span class="skill-pill">pfSense (Firewall, VPN IPsec)</span>
-                        <span class="skill-pill">CNILSec NumAcadémie</span>
-                    </div>
-                </div>
-
-                <div class="parcours-card competences-card">
-                    <div class="parcours-card-header">
-                        <div class="parcours-icon-wrap">
-                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 18H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 12H13.5" /></svg>
-                        </div>
-                        <h3>Scripting & Outils</h3>
-                    </div>
-                    <p>Automatisation de tâches et gestion de parc.</p>
-                    <div class="parcours-tags">
-                        <span class="skill-pill">Scripting Bash (Linux)</span>
-                        <span class="skill-pill">Python (Automatisation)</span>
-                        <span class="skill-pill">Scripting PowerShell</span>
-                        <span class="skill-pill">GLPI / Ticketing</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
+        <!-- ========== STAGES ========== -->
         <section id="experience">
-            <h2 class="section-title">Expériences Professionnelles</h2>
+            <h2 class="section-title">Expériences &amp; Stages</h2>
             <div class="projects-grid">
 
                 <div class="project-item clickable-project"
                      data-img="img/collins.jpg"
-                     data-title="Stage 1 : Collins Aerospace (Blagnac)"
-                     data-desc="Support technique niveau 1 & 2, gestion de parc informatique et résolution des incidents utilisateurs."
-                     data-doc-url="documents/02_Stages/Stage_2_Collins/stageUn.pdf">
-                    <div class="project-image"><img src="img/collins.jpg" alt="Collins Aerospace Blagnac" loading="lazy"></div>
+                     data-title="Stages Collins Aerospace"
+                     data-desc="Support technique niveau 1 & 2, gestion de parc informatique, déploiement de postes et accompagnement utilisateurs sur les sites de Blagnac et Colomiers."
+                     data-doc-url-1="documents/02_Stages/Stage_1_Collins/Rapport_de_stage_AYACHE_Elsa.pdf"
+                     data-doc-url-2="documents/02_Stages/Stage_2_Collins/RapportStageColomiersCollins.pdf">
+                    <div class="project-image"><img src="img/collins.jpg" alt="Collins Aerospace" loading="lazy"></div>
                     <div class="project-info">
-                        <span class="tag-tech">Support & Parc (Blagnac)</span>
+                        <span class="tag-tech">Stages 1 &amp; 2</span>
                         <h3>Collins Aerospace</h3>
-                        <p>Support technique N1/N2 et maintien en condition opérationnelle.</p>
+                        <p>Support technique et gestion de parc — Blagnac &amp; Colomiers.</p>
                     </div>
                 </div>
-                <div class="project-item clickable-project"
-                     data-img="img/collins.jpg"
-                     data-title="Stage 2 : Collins Aerospace (Colomiers)"
-                     data-desc="Déploiement de postes, masterisation, et accompagnement technique des utilisateurs sur site."
-                     data-doc-url="documents/02_Stages/Stage_2_Collins/RapportStageColomiersCollins.pdf">
-                    <div class="project-image"><img src="img\avioncollins2.jpg" alt="Collins Aerospace Colomiers" loading="lazy"></div>
-                    <div class="project-info">
-                        <span class="tag-tech">Déploiement (Colomiers)</span>
-                        <h3>Collins Aerospace</h3>
-                        <p>Déploiement d'infrastructures postes de travail et masterisation.</p>
-                    </div>
-                </div>
-                </div>
+
+            </div>
         </section>
+
+        <!-- ========== INFRASTRUCTURE ========== -->
         <section id="projects-sisr">
-            <h2 class="section-title">Infrastructure & Projets</h2>
+            <h2 class="section-title">Infrastructure &amp; Sécurité</h2>
             <div class="projects-grid">
 
                 <div class="project-item clickable-project"
                      data-img="img/proxmoxImage.png"
-                     data-title="Haute Disponibilité EcoSolar"
+                     data-title="Projet 1 : Haute Disponibilité EcoSolar"
                      data-desc="Cluster Proxmox VE, stockage NFS partagé et redondance pfSense (CARP) pour éliminer les SPOF."
                      data-doc-url="documents/01_Projet1_EcoSolar_Redondance/Documentation_Technique_Ecolsolar_Redondance.pdf">
                     <div class="project-image"><img src="img/proxmoxImage.png" alt="Proxmox" loading="lazy"></div>
                     <div class="project-info">
-                        <span class="tag-tech">Virtualisation & HA</span>
+                        <span class="tag-tech">SISR — Redondance</span>
                         <h3>Cluster Proxmox HA</h3>
-                        <p>Tolérance aux pannes et sécurisation du SI d'EcoSolar Solutions.</p>
+                        <p>Modernisation et sécurisation du SI d'EcoSolar Solutions.</p>
                     </div>
                 </div>
 
                 <div class="project-item clickable-project"
                      data-img="img/drawio.jpg"
-                     data-title="Interconnexion Marseille"
-                     data-desc="Étude de l'interconnexion sécurisée entre Toulouse et le futur datacenter de Marseille (VPN IPsec)."
-                     data-doc-url="documents\01_Projet1_EcoSolar_Redondance\Projet 2 BTS SIO.pdf">
+                     data-title="Projet 2 : Interconnexion Marseille"
+                     data-desc="Étude de l'interconnexion sécurisée entre Toulouse et le futur datacenter de Marseille."
+                     data-doc-url="documents\01_Projet1_EcoSolar_Redondance\Projet 2 BTS SIO_v1.pdf">
                     <div class="project-image"><img src="img/drawio.jpg" alt="Datacenter" loading="lazy"></div>
                     <div class="project-info">
-                        <span class="tag-tech">Architecture Réseau</span>
-                        <h3>Réseau Multi-site</h3>
-                        <p>Conception d'un WAN sécurisé et plan d'adressage IP.</p>
+                        <span class="tag-tech">SISR — Réseau</span>
+                        <h3>Interconnexion Multi-site</h3>
+                        <p>Planification d'un réseau étendu sécurisé.</p>
                     </div>
                 </div>
 
@@ -313,89 +229,198 @@
                      data-title="TP : Administration Réseau"
                      data-desc="Conception réseau multi-sites sur Cisco Packet Tracer : Routage, VLANs et ACLs."
                      data-doc-url="documents/03_Annexes_et_TP/TP1RESEAUBTS2.pdf">
-                    <div class="project-image"><img src="img/ciscopackettracet.png" alt="Cisco" loading="lazy"></div>
+                    <div class="project-image"><img src="img/ciscopackettracet.png" alt="TP Réseau" loading="lazy"></div>
                     <div class="project-info">
-                        <span class="tag-tech">Simulation Cisco</span>
-                        <h3>Infrastructure d'Entreprise</h3>
-                        <p>Mise en œuvre de services réseaux (DHCP, NAT) et sécurisation (ACL).</p>
+                        <span class="tag-tech">TP Réseau</span>
+                        <h3>Services d'Infrastructure</h3>
+                        <p>Mise en œuvre et sécurisation de services réseaux.</p>
                     </div>
                 </div>
+
+            </div>
+        </section>
+
+        <!-- ========== DEV & SÉCU ========== -->
+        <section id="projects-dev">
+            <h2 class="section-title">Développement &amp; Sécurité Appliquée</h2>
+            <div class="projects-grid">
+
                 <div class="project-item clickable-project"
-                     data-img="img\overthewire.jpg"
-                     data-title="Résolution OverTheWire"
-                     data-desc="10 premiers niveaux du jeu de lignes de commande Bash OverTheWire"
-                     data-doc-url="documents\03_Annexes_et_TP\TP1LINUXBTS2.pdf">
-                    <div class="project-image"><img src="img\overthewire.jpg" alt="ANSSI" loading="lazy"></div>
+                     data-img="img/projettut2.png"
+                     data-title="Projet Tutoré 2 : Ticketing IRIS2"
+                     data-desc="Création et déploiement d'une application de ticketing en collaboration avec les SLAM et les SISR."
+                     data-doc-url="documents/04_Projets_Tutores/IRIS2_Projet_ticketing_SISR.pdf">
+                    <div class="project-image"><img src="img/projettut2.png" alt="Ticketing IRIS2" loading="lazy"></div>
+                    <div class="project-info">
+                        <span class="tag-tech">IRIS2 — SISR</span>
+                        <h3>Déploiement d'une application de ticketing</h3>
+                        <p>Collaboration SLAM et SISR pour créer une infrastructure complète.</p>
+                    </div>
+                </div>
+
+                <div class="project-item clickable-project"
+                     data-img="img/overthewire.jpg"
+                     data-title="CTF &amp; Challenges OverTheWire"
+                     data-desc="Pratique régulière de la sécurité offensive et défensive sur les plateformes CTF."
+                     data-doc-url="documents/03_Annexes_et_TP/TP1LINUXBTS2.pdf">
+                    <div class="project-image"><img src="img/overthewire.jpg" alt="CTF" loading="lazy"></div>
                     <div class="project-info">
                         <span class="tag-tech">Cybersécurité</span>
-                        <h3>OverTheWire</h3>
-                        <p>Consolidation compétences Bash et initiation à la cybersécurité</p>
+                        <h3>Challenges CTF</h3>
+                        <p>Entraînement pratique sur les vulnérabilités Linux.</p>
                     </div>
                 </div>
-               
 
                 <div class="project-item clickable-project"
                      data-img="img/moocanssi.png"
                      data-title="Certification MOOC ANSSI"
-                     data-desc="Validation du MOOC SecNumAcadémie sur les fondamentaux de la cybersécurité."
+                     data-desc="Validation de la formation SecNumAcadémie sur les fondamentaux de la cybersécurité."
                      data-doc-url="documents/03_Annexes_et_TP/cnil_mooc_rgpd.jpg">
                     <div class="project-image"><img src="img/moocanssi.png" alt="ANSSI" loading="lazy"></div>
                     <div class="project-info">
-                        <span class="tag-tech">Cybersécurité</span>
-                        <h3>MOOC SecNumAcadémie</h3>
-                        <p>Validation des bonnes pratiques de sécurité numérique de l'ANSSI.</p>
+                        <span class="tag-tech">Certification</span>
+                        <h3>SecNumAcadémie</h3>
+                        <p>Validation des bonnes pratiques de sécurité numérique de l'ANSSI et de la CNIL.</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- ========== VEILLE ========== -->
         <section id="veille">
-            <h2 class="section-title">Veille Technologique</h2>
+            <h2 class="section-title">Ma Veille Technologique</h2>
             <div id="rss-feed" class="rss-container">
                 <div class="loader">
-                    Connexion au flux de sécurité...
+                    <span class="loader-dot"></span>
+                    <span class="loader-dot"></span>
+                    <span class="loader-dot"></span>
+                    Connexion au flux RSS...
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="parcours-card" style="max-width: 850px; margin: 0 auto; text-align: center;">
-                <div class="parcours-icon-wrap" style="margin: 0 auto 1.5rem; display: inline-flex;">
-                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>
+        <!-- ========== À PROPOS ========== -->
+        <section id="about-section">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-grid">
+
+                <div class="about-card">
+                    <span class="about-card-label">Profil</span>
+                    <h3>Elsa Ayache</h3>
+                    <p>
+                        Étudiante en <strong>BTS SIO option SISR</strong> à l'IRIS Toulouse, je me forme à l'administration des systèmes et réseaux avec une appétence particulière pour la cybersécurité.
+                        Issue d'une Licence Informatique, j'ai consolidé mes compétences techniques lors de deux stages chez <strong>Collins Aerospace</strong>.
+                    </p>
+                    <p>
+                        Je rejoindrai l'<strong>EPSI Balma</strong> à la rentrée 2026 pour un Bachelor Administrateur Systèmes, Réseaux et Bases de Données, idéalement en alternance.
+                    </p>
                 </div>
-                <h3 style="font-size: 1.35rem; font-weight: 700;">Prêt à renforcer votre équipe IT ?</h3>
-                <p style="margin: 1rem auto 2rem; max-width: 600px; color: var(--text-muted);">
-                    Actuellement à la recherche d'une <strong>alternance</strong> pour mon Bachelor Admin. Sys & Réseaux, je suis à votre disposition pour discuter de mon profil et de mes motivations.
-                </p>
-                <div class="actions" style="justify-content: center; gap: 16px;">
-                    <a href="mailto:elsa.ayache@outlook.com" class="btn-primary">
-                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-                        Envoyer un email
-                    </a>
-                    <a href="https://www.linkedin.com/in/e-ayache/" target="_blank" rel="noopener" class="btn-secondary">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        Profil LinkedIn
-                    </a>
+
+                <div class="about-card">
+                    <span class="about-card-label">Compétences techniques</span>
+                    <h3>Stack &amp; Outils</h3>
+                    <div class="about-skills">
+                        <div class="about-skill-group">
+                            <span class="about-skill-title">Systèmes</span>
+                            <div class="parcours-tags">
+                                <span class="skill-pill">Linux</span>
+                                <span class="skill-pill">Windows Server</span>
+                                <span class="skill-pill">Proxmox</span>
+                                <span class="skill-pill">VMware</span>
+                            </div>
+                        </div>
+                        <div class="about-skill-group">
+                            <span class="about-skill-title">Réseaux</span>
+                            <div class="parcours-tags">
+                                <span class="skill-pill">Cisco / Packet Tracer</span>
+                                <span class="skill-pill">pfSense</span>
+                                <span class="skill-pill">VLANs / VPN</span>
+                            </div>
+                        </div>
+                        <div class="about-skill-group">
+                            <span class="about-skill-title">Sécurité &amp; Dev</span>
+                            <div class="parcours-tags">
+                                <span class="skill-pill">Cybersécurité</span>
+                                <span class="skill-pill">GLPI</span>
+                                <span class="skill-pill">SQL</span>
+                                <span class="skill-pill">Python</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="about-card">
+                    <span class="about-card-label">Contact</span>
+                    <h3>Me joindre</h3>
+                    <div class="about-contact-list">
+                        <div class="about-contact-item">
+                            <span class="about-contact-icon">✉</span>
+                            <a href="mailto:elsa.ayache@outlook.com">elsa.ayache@outlook.com</a>
+                        </div>
+                        <div class="about-contact-item">
+                            <span class="about-contact-icon">📍</span>
+                            <span>Toulouse, France</span>
+                        </div>
+                        <div class="about-contact-item">
+                            <span class="about-contact-icon">🎓</span>
+                            <span>IRIS Toulouse · BTS SIO SISR</span>
+                        </div>
+                        <div class="about-contact-item">
+                            <span class="about-contact-icon">🔍</span>
+                            <span>Alternance recherchée — Rentrée 2026</span>
+                        </div>
+                    </div>
+                    <a href="mailto:elsa.ayache@outlook.com" class="btn-primary" style="margin-top:1.4rem; flex:none; width:fit-content;">Me contacter</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== MENTIONS LÉGALES ========== -->
+        <section id="mentions-legales">
+            <h2 class="section-title">Mentions Légales</h2>
+            <div class="legal-grid">
+
+                <div class="legal-card">
+                    <h3>Éditeur du site</h3>
+                    <p><strong>Nom :</strong> Elsa Ayache</p>
+                    <p><strong>Statut :</strong> Étudiante — BTS SIO SISR, IRIS Toulouse</p>
+                    <p><strong>Contact :</strong> <a href="mailto:elsa.ayache@outlook.com">elsa.ayache@outlook.com</a></p>
+                </div>
+
+                <div class="legal-card">
+                    <h3>Hébergement</h3>
+                    <p><strong>Hébergeur :</strong> GitHub Pages</p>
+                    <p><strong>Société :</strong> GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
+                    <p><strong>Site :</strong> <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a></p>
+                </div>
+
+                <div class="legal-card">
+                    <h3>Propriété intellectuelle</h3>
+                    <p>L'ensemble du contenu de ce site (textes, projets, documents) est la propriété exclusive d'Elsa Ayache, sauf mention contraire. Toute reproduction ou diffusion sans autorisation préalable est interdite.</p>
+                </div>
+
+                <div class="legal-card">
+                    <h3>Données personnelles</h3>
+                    <p>Ce site ne collecte aucune donnée personnelle. Aucun cookie de traçage n'est déposé. Les seules données transmises sont celles que vous renseignez volontairement via le formulaire de contact (email).</p>
+                    <p style="margin-top:.6rem;">Conformément au <strong>RGPD</strong>, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant : <a href="mailto:elsa.ayache@outlook.com">elsa.ayache@outlook.com</a></p>
+                </div>
+
             </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-            <p class="footer-logo">Elsa<span>.SISR</span></p>
-            <p>&copy; 2026 — Admin Sys & Réseaux · IRIS Toulouse</p>
-        </div>
+        <p class="footer-logo">Elsa<span>.SISR</span></p>
+        <p>&copy; 2026 — Elsa Ayache · BTS SIO SISR · IRIS Toulouse</p>
     </footer>
 
+    <!-- ========== MODALE ========== -->
     <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content">
-            <button class="close-modal" aria-label="Fermer">
-                <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-            </button>
+            <button class="close-modal" aria-label="Fermer">&times;</button>
             <div class="modal-image-container">
                 <img id="modalImg" src="" alt="">
             </div>
@@ -403,13 +428,13 @@
                 <h2 id="modalTitle"></h2>
                 <p id="modalDesc"></p>
                 <div class="actions">
-                    <a href="#" class="btn-primary" id="modalDocLink1" target="_blank" rel="noopener">📄 Consulter le document</a>
-                    <a href="#" class="btn-secondary" id="modalDocLink2" target="_blank" rel="noopener" style="display:none;">📄 Doc complémentaire</a>
+                    <a href="#" class="btn-primary" id="modalDocLink1" target="_blank" rel="noopener">📄 Rapport Stage 1</a>
+                    <a href="#" class="btn-primary" id="modalDocLink2" target="_blank" rel="noopener">📄 Rapport Stage 2</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
