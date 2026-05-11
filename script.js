@@ -127,15 +127,15 @@ async function loadVeille() {
     // Liste de proxies à essayer dans l'ordre
     const proxies = [
         {
-            type: 'cors-anywhere-like',
-            url:  `https://api.allorigins.win/get?url=${encoded}`,
-            parse: async (res) => {
-                const json = await res.json();
-                const items = parseXML(json.contents);
-                if (!items.length) throw new Error('vide');
-                return items;
-            }
-        },
+    type: 'corsproxy',
+    url:  `https://corsproxy.io/?${encoded}`,
+    parse: async (res) => {
+        const text = await res.text();
+        const items = parseXML(text);
+        if (!items.length) throw new Error('vide');
+        return items;
+    }
+},
         {
             type: 'feed2json',
             url:  `https://feed2json.org/convert?url=${encoded}`,
