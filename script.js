@@ -2,7 +2,7 @@
 //  PORTFOLIO ELSA AYACHE — script.js
 // ================================================
 
-const RSS_URL = 'https://www.google.fr/alerts/feeds/03413773743942179689/6082395940041831098';
+const RSS_URL = 'https://www.google.fr/alerts/feeds/03413773743942179689/11429830670445940793';
 
 // Images de secours thématiques (hébergées sur Picsum / services publics sans restriction CORS)
 const FALLBACK_IMAGES = [
